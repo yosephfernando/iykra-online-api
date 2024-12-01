@@ -11,6 +11,7 @@ use dotenv::dotenv;
 async fn main() -> std::io::Result<()> {
     env_logger::init();
     dotenv().ok();
+    /* Can add other db client connection. eg: postgres_client, mysql_client, etc */
     let mongodb_client = mongodb_con().await;
     HttpServer::new(move || {
         App::new()
