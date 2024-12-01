@@ -1,3 +1,8 @@
+## SAMPLE .env ##
+```
+MONGODB_URI=mongodb://{username}:{password}@{mongohost}:{mongoport}/{dbname}?authSource=admin
+RUST_LOG=actix_web=debug
+```
 ## FOLDER STRUCTURE ##
 - **`/src/`**: Contains all the Rust source code files for your project.
     - **`main.rs`**: This is the main entry point of the program.
